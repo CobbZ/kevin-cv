@@ -21,17 +21,17 @@
 //  16. Drilldown
 //  17. Dropdown
 //  18. Dropdown Menu
-//  19. Flexbox Utilities
+//  19. Flexbox Utilites
 //  20. Forms
-//  21. Label
-//  22. Media Object
-//  23. Menu
-//  24. Meter
-//  25. Off-canvas
-//  26. Orbit
-//  27. Pagination
-//  28. Progress Bar
-//  29. Prototype Arrow
+//  22. Label
+//  23. Media Object
+//  24. Menu
+//  25. Meter
+//  26. Off-canvas
+//  27. Orbit
+//  28. Pagination
+//  29. Progress Bar
+//  30. Prototype Arrow
 //  30. Prototype Border-Box
 //  31. Prototype Border-None
 //  32. Prototype Bordered
@@ -397,14 +397,13 @@ $dropdown-menu-item-color-active: get-color(primary);
 $dropdown-menu-item-background-active: transparent;
 
 // 19. Flexbox Utilities
-// ---------------------
+// ---------
 
 $flex-source-ordering-count: 6;
 $flexbox-responsive-breakpoints: true;
 
 // 20. Forms
 // ---------
-
 $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
@@ -589,7 +588,7 @@ $prototype-display: (
   table-cell
 );
 
-// 34. Prototype Font-Styling
+// 33. Prototype Font-Styling
 // --------------------------
 
 $prototype-font-breakpoints: $global-prototype-breakpoints;
@@ -597,7 +596,7 @@ $prototype-wide-letter-spacing: rem-calc(4);
 $prototype-font-normal: $global-weight-normal;
 $prototype-font-bold: $global-weight-bold;
 
-// 35. Prototype List-Style-Type
+// 34. Prototype List-Style-Type
 // -----------------------------
 
 $prototype-list-breakpoints: $global-prototype-breakpoints;
@@ -616,7 +615,7 @@ $prototype-style-type-ordered: (
   upper-roman
 );
 
-// 36. Prototype Overflow
+// 35. Prototype Overflow
 // ----------------------
 
 $prototype-overflow-breakpoints: $global-prototype-breakpoints;
@@ -626,7 +625,7 @@ $prototype-overflow: (
   scroll
 );
 
-// 37. Prototype Position
+// 36. Prototype Position
 // ----------------------
 
 $prototype-position-breakpoints: $global-prototype-breakpoints;
@@ -638,13 +637,13 @@ $prototype-position: (
 );
 $prototype-position-z-index: 975;
 
-// 38. Prototype Rounded
+// 37. Prototype Rounded
 // ---------------------
 
 $prototype-rounded-breakpoints: $global-prototype-breakpoints;
 $prototype-border-radius: rem-calc(3);
 
-// 39. Prototype Separator
+// 38. Prototype Separator
 // -----------------------
 
 $prototype-separator-breakpoints: $global-prototype-breakpoints;
@@ -654,14 +653,14 @@ $prototype-separator-width: 3rem;
 $prototype-separator-background: $primary-color;
 $prototype-separator-margin-top: $global-margin;
 
-// 40. Prototype Shadow
+// 39. Prototype Shadow
 // --------------------
 
 $prototype-shadow-breakpoints: $global-prototype-breakpoints;
 $prototype-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
                        0 2px 10px 0 rgba(0,0,0,.12);
 
-// 41. Prototype Sizing
+// 40. Prototype Sizing
 // --------------------
 
 $prototype-sizing-breakpoints: $global-prototype-breakpoints;
@@ -676,13 +675,13 @@ $prototype-sizes: (
   100: 100%
 );
 
-// 42. Prototype Spacing
+// 41. Prototype Spacing
 // ---------------------
 
 $prototype-spacing-breakpoints: $global-prototype-breakpoints;
 $prototype-spacers-count: 3;
 
-// 43. Prototype Text-Decoration
+// 42. Prototype Text-Decoration
 // -----------------------------
 
 $prototype-decoration-breakpoints: $global-prototype-breakpoints;
@@ -692,7 +691,7 @@ $prototype-text-decoration: (
   line-through,
 );
 
-// 44. Prototype Text-Transformation
+// 43. Prototype Text-Transformation
 // ---------------------------------
 
 $prototype-transformation-breakpoints: $global-prototype-breakpoints;
@@ -702,13 +701,13 @@ $prototype-text-transformation: (
   capitalize
 );
 
-// 45. Prototype Text-Utilities
+// 44. Prototype Text-Utilities
 // ----------------------------
 
 $prototype-utilities-breakpoints: $global-prototype-breakpoints;
 $prototype-text-overflow: ellipsis;
 
-// 46. Responsive Embed
+// 45. Responsive Embed
 // --------------------
 
 $responsive-embed-margin-bottom: rem-calc(16);
@@ -717,7 +716,7 @@ $responsive-embed-ratios: (
   widescreen: 16 by 9,
 );
 
-// 47. Reveal
+// 46. Reveal
 // ----------
 
 $reveal-background: $white;
@@ -729,7 +728,7 @@ $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
 $reveal-overlay-background: rgba($black, 0.45);
 
-// 48. Slider
+// 47. Slider
 // ----------
 
 $slider-width-vertical: 0.5rem;
@@ -743,7 +742,7 @@ $slider-handle-background: $primary-color;
 $slider-opacity-disabled: 0.25;
 $slider-radius: $global-radius;
 
-// 49. Switch
+// 48. Switch
 // ----------
 
 $switch-background: $medium-gray;
@@ -759,7 +758,7 @@ $switch-paddle-offset: 0.25rem;
 $switch-paddle-radius: $global-radius;
 $switch-paddle-transition: all 0.25s ease-out;
 
-// 50. Table
+// 49. Table
 // ---------
 
 $table-background: $white;
@@ -781,7 +780,7 @@ $table-foot-font-color: $body-font-color;
 $show-header-for-stacked: false;
 $table-stack-breakpoint: medium;
 
-// 51. Tabs
+// 50. Tabs
 // --------
 
 $tab-margin: 0;
@@ -798,7 +797,7 @@ $tab-content-border: $light-gray;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;
 
-// 52. Thumbnail
+// 51. Thumbnail
 // -------------
 
 $thumbnail-border: solid 4px $white;
@@ -808,7 +807,7 @@ $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 
-// 53. Title Bar
+// 52. Title Bar
 // -------------
 
 $titlebar-background: $black;
@@ -819,7 +818,7 @@ $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
 $titlebar-icon-spacing: 0.25rem;
 
-// 54. Tooltip
+// 53. Tooltip
 // -----------
 
 $has-tip-cursor: help;
@@ -834,7 +833,7 @@ $tooltip-pip-width: 0.75rem;
 $tooltip-pip-height: $tooltip-pip-width * 0.866;
 $tooltip-radius: $global-radius;
 
-// 55. Top Bar
+// 54. Top Bar
 // -----------
 
 $topbar-padding: 1rem;
@@ -844,9 +843,21 @@ $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
 
-// 38. Media-object-section
+// 55. Xy Grid
+// -----------
+
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+$grid-margin-gutters: (
+  small: 20px,
+  medium: 30px
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$block-grid-max: 8;
+
+// 56. Media-object-section
 // ----------------------
 
 $mediaobject-image-width-stacked: 1rem;
 $mediaobject-margin-bottom: 1rem;
-
