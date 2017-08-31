@@ -5,19 +5,18 @@ margin-top: 90px;
 }
 
 ul {
-  position: fixed;
+  
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 300px;
-  top: 200px;
+  width: 170px;
+  top: 250px;
+  left: 120px;
   background-color: white;
 }
 
 li a {
-  position: relative;
+  
   display: block;
-  color: #000;
+  color: #333;
   padding: 8px 16px;
   text-decoration: none;
 }
