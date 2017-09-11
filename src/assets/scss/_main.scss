@@ -7,8 +7,9 @@
 }
 
 .txt{
-
+  font-family: 'Cormorant Garamond', serif;
   margin-top: 90px;
+  font-size: 19px;
 }
 
 
@@ -28,20 +29,20 @@ ul.verticalLine {
 }
 
 li a {
-  
+  font-family: 'Roboto Slab', serif;
   display: block;
   color: #333;
   padding: 8px 16px;
   text-decoration: none;
   @include breakpoint(small only) {
-    float: left;
+    float: middle;
     border: solid thin #333;
     margin-bottom: -20px;
     margin-top: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
     width: auto;
-    text-align: center;
+    opacity: 0.9;
   }
 }
 
@@ -59,7 +60,7 @@ li a:hover{
   text-align: center;
   margin-bottom: 120px;
   margin-top: 90px;
-  
+  font-family: 'Roboto Slab', serif;
 }
 
 
@@ -73,9 +74,12 @@ footer {
 footer p {
   text-align: center;
   padding-top: 13px;
+  
 }
+
 .social {
   margin-right: .25rem;
+  text-align: center;
 }
 
 .social.linkedin{
@@ -86,8 +90,9 @@ footer p {
   #linkedinimg{
     width: auto;
     height: auto;
-    max-width: 60px; 
+    max-width: 90px; 
     max-height: 60px;
+    float: left;
   }
 }
 
@@ -97,15 +102,16 @@ footer p {
 }
 
 .social.google-plus {
-  background-color: #dd4b39;
+  background-color: #D1423B;
   color: white;
   padding-top: 0;
   padding-bottom: 0;
   #gplusimg{
     width: auto;
     height: auto;
-    max-width: 60px; 
+    max-width: 90px; 
     max-height: 60px;
+    float: left;
   }
 }
 
@@ -117,5 +123,5 @@ footer p {
 .social > .fa {
   color: white;
   margin-right: .25rem;
-  
+
 }
