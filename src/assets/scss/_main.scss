@@ -17,7 +17,7 @@
 }
 
 .txt{
-  font-family: 'Cormorant Garamond', serif;
+
   font-size: 19px;
   @include breakpoint(small only) {
     margin-top: 3rem;
@@ -61,7 +61,7 @@ ul.verticalLine {
 }
 
 li a {
-  font-family: 'Roboto Slab', serif;
+  
   display: block;
   color: #333;
   padding: 8px 16px;
@@ -92,7 +92,7 @@ li a:hover{
   text-align: center;
   margin-bottom: 120px;
   margin-top: 90px;
-  font-family: 'Roboto Slab', serif;
+  
 }
 
 
