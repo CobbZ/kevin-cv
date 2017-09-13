@@ -3,6 +3,11 @@
   margin-top: 60px;
 }
 
+#main{
+  @include breakpoint(small only) {
+    margin-top: 2rem;
+  }
+}
 
 .img-circle{
   border-radius: 50%;
@@ -13,8 +18,10 @@
 
 .txt{
   font-family: 'Cormorant Garamond', serif;
-  
   font-size: 19px;
+  @include breakpoint(small only) {
+    margin-top: 3rem;
+  }
 }
 
 .hidden { 
@@ -42,13 +49,9 @@
 
 
 ul.verticalLine {
-
   list-style-type: none;
-  width: 170px;
-  top: 100px;
-  left: 120px;
   background-color: white;
-
+  margin-left: 0;
   @include breakpoint(small only) {
     border-left: none;
     width: auto;
