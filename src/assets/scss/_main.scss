@@ -55,6 +55,7 @@ ul.verticalLine {
   @include breakpoint(small only) {
     border-left: none;
     width: auto;
+    text-align: center;
   }
 
 }
