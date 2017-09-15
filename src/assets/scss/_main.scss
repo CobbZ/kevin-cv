@@ -17,8 +17,6 @@
 }
 
 .txt{
-
-  font-size: 19px;
   @include breakpoint(small only) {
     margin-top: 3rem;
   }
@@ -47,6 +45,20 @@
     rgba(255, 255, 255, 1) 100% );
 }
 
+a.button{
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: -1.3rem;
+  opacity: 0.9;
+  color: white;
+  background-color: #282727;
+  font-size: 14px;  
+}
+
+a.button:hover{
+  background-color: #444;
+}
 
 ul.verticalLine {
   list-style-type: none;
@@ -112,48 +124,31 @@ footer p {
 .social {
   margin-right: .25rem;
   text-align: center;
-}
-
-.social.linkedin{
-  background-color: #007bb5;
-  color: white;
-  padding-top: 0;
-  padding-bottom: 0;
-  #linkedinimg{
-    width: auto;
+  img{
+    padding: 5px;
     height: auto;
-    max-width: 90px; 
-    max-height: 60px;
-    float: left;
+    width: 50px;
   }
-}
-
-.social.linkedin:hover, .social.linkedin:focus {
-  background-color: #006291;
-  color: white;
-}
-
-.social.google-plus {
-  background-color: #D1423B;
-  color: white;
-  padding-top: 0;
-  padding-bottom: 0;
-  #gplusimg{
-    width: auto;
-    height: auto;
-    max-width: 90px; 
-    max-height: 60px;
-    float: left;
+  &.linkedin{
+    background-color: #007bb5;
+    color: white;
+ 
+    &:hover, &:focus {
+      background-color: #006291;
+      color: white;
+    }
   }
-}
-
-.social.google-plus:hover, .social.google-plus:focus {
-  background-color: #be3221;
-  color: white;
-}
-
-.social > .fa {
-  color: white;
-  margin-right: .25rem;
-
+  &.google-plus {
+    background-color: #DC4E41;
+    color: white;
+      
+    &:hover, &:focus {
+      background-color: #be3221;
+      color: white;
+    }
+  }
+      &.social > .fa {
+        color: white;
+        margin-right: .25rem;
+      }
 }
