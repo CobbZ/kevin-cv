@@ -59,6 +59,12 @@ a.button{
       -khtml-user-select: none;
         -webkit-user-select: none;
           -o-user-select: none;
+  @include breakpoint(small only) {
+    margin-bottom: 12rem;
+    float: middle;
+  }
+
+
 }
 
 a.button:hover{
@@ -86,8 +92,8 @@ li a {
   @include breakpoint(small only) {
     float: middle;
     border: solid thin #333;
-    margin-bottom: -20px;
-    margin-top: 40px;
+    margin-bottom: -50px;
+    margin-top: 80px;
     padding-bottom: 10px;
     padding-top: 10px;
     width: auto;
@@ -112,21 +118,15 @@ li a:hover{
   
 }
 
-a.submit{
-  display: block;
-  margin-left: 245px;
-  margin-right: 245px;
-  border: solid thin #999;
+input#submit{
+  width: 67px;
   text-align: center;
+  border-top: thin solid  #999;
+  padding: 3px;
   color: #333;
   background-color: #B8B8B8;
 }
 
-a.submit:hover{
-  color: white;
-  background-color: #999;
-  border: solid thin #777;
-}
 
 footer {
   
@@ -144,6 +144,7 @@ footer p {
 .social {
   margin-right: .25rem;
   text-align: center;
+  padding: 2px;
   img{
     padding: 1px;
     height: auto;
