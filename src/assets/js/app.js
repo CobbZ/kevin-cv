@@ -11,12 +11,25 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-var postDiv     = $( ".postfade-inner" );
-var postHeight  = postDiv.outerHeight();
+var postOuter         = $( ".postfade" );
+var postInner         = $( ".postfade-inner" );
+var heightCollapsed   = postOuter.outerHeight();
+var heightExpanded    = postInner.outerHeight();
 
-$(document).ready(function() {
-    $("#but").on("click", function() {
+$(document).ready(function (){
+    $("#but").on("click", function (){
         
-        $( ".postfade" ).outerHeight(postHeight).toggleClass( "expanded" );
-    });   
+        if (postOuter.outerHeight() <= heightCollapsed) {
+            postOuter.animate({ height: heightExpanded }, 300);
+            
+            $("#but").html('');
+        }
+        
+        else if (postOuter.outerHeight() >= heightCollapsed) {
+            postOuter.animate({ height: heightCollapsed }, 300);
+            
+            $("#but").html('');
+        }  
+        
+    });
 });
