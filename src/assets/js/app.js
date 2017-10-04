@@ -10,3 +10,13 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+var postDiv     = $( ".postfade-inner" );
+var postHeight  = postDiv.outerHeight();
+
+$(document).ready(function() {
+    $("#but").on("click", function() {
+        
+        $( ".postfade" ).outerHeight(postHeight).toggleClass( "expanded" );
+    });   
+});
