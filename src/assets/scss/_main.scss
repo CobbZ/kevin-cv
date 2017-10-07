@@ -49,6 +49,13 @@
     background-image: linear-gradient( 
       rgba(255, 255, 255, 0) 57%, 
       rgba(255, 255, 255, 1) 100% );
+    opacity: 1;
+
+    @include transition(all .25s ease);
+  }
+
+  &.expanded:after {
+    opacity: 0;
   }
 
   .postfade-inner {

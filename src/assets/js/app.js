@@ -23,12 +23,15 @@ $(document).ready(function (){
             postOuter.animate({ height: heightExpanded }, 300);
             
             $("#but").html('');
+            $('.postfade').addClass('expanded');
         }
         
         else if (postOuter.outerHeight() >= heightCollapsed) {
             postOuter.animate({ height: heightCollapsed }, 300);
             
             $("#but").html('');
+            console.log('closed');
+            $('.postfade').removeClass('expanded');
         }  
         
     });
