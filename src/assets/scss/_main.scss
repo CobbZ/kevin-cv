@@ -1,17 +1,30 @@
 
 #header{
-  margin-top: 60px;
+  background-color: #F3F3F3;
+}
+
+div#head{
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+span{
+  font-weight: 300;
 }
 
 #main{
   position: relative;
-
+  margin-top: 30px;
   @include breakpoint(small only) {
     margin-top: 2rem;
   }
 }
 
 .img-circle{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 210px;
   border-radius: 50%;
   border: 1px solid #dedede ;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.22);
@@ -50,8 +63,7 @@
       rgba(255, 255, 255, 0) 57%, 
       rgba(255, 255, 255, 1) 100% );
     opacity: 1;
-
-    @include transition(all .25s ease);
+    
   }
 
   &.expanded:after {
@@ -74,8 +86,9 @@
   width: 45px;
   border-radius: 50%;
   font-family: "FontAwesome";
-  color: white;
-  background-color: #666;
+  color: #666;
+  background-color: white;
+  border: solid thin #666;
   
   @include transition(all .25s ease);
   
@@ -130,27 +143,35 @@ li a:hover{
   border-left: thin solid #555;
 }
 
-#formula {
-
+h5{
   text-align: center;
+}
+
+#formula {
+  
+  text-align: left;
   margin-bottom: 120px;
   margin-top: 90px;
   
 }
 
-input#submit{
-  width: 67px;
-  text-align: center;
-  border-top: thin solid  #999;
-  padding: 3px;
-  color: #333;
-  background-color: #B8B8B8;
+input.button.hollow{
+  border-radius: 2rem;
+  color: #666;
+  border-color: #666;
+  border: thin solid #666;
+
+  &:hover{
+    color: white;
+    background-color: #888;
+        
+  }
 }
 
 
 footer {
   
-  background-color: whitesmoke;
+  background-color: #F3F3F3;
   width: 100%;
   padding-bottom: 8px;
 }
@@ -162,18 +183,19 @@ footer p {
 }
 
 .social {
-  margin-right: .25rem;
-  text-align: center;
-  padding: 2px;
-  img{
-    padding: 1px;
-    height: auto;
-    width: 36px;
-    height: 36px;
+  border-radius: 5rem;
+  padding: 3px;
+  img {
+      padding: 1px;
+      width: 26px;
+      height: 26px;
+      border-radius: 100%;
   }
-  &.linkedin{
-    background-color: #007bb5;
-    color: white;
+  &.linkedin {
+      background-color: #007bb5;
+      color: white;
+      margin-right: .5rem;
+      border-radius: 2rem;
  
     &:hover, &:focus {
       background-color: #006291;
@@ -183,6 +205,7 @@ footer p {
   &.google-plus {
     background-color: #DC4E41;
     color: white;
+    border-radius: 2rem;
       
     &:hover, &:focus {
       background-color: #be3221;
