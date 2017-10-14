@@ -28,7 +28,11 @@ span{
   border-radius: 50%;
   border: 1px solid #dedede ;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.22);
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+    -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
 }
 
 .txt{
